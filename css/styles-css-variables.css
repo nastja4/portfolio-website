@@ -1,0 +1,261 @@
+/*
+Colors used
+
+Text Color (white): #fff;
+Primary Color (strong red): #AA1F46; (931B3B)
+Secondary Color (deep blue): #00426E; (! 005C99 C2E4FF)
+Accent Color ():
+*/
+
+:root {
+    --primaryColor: #931b3b;
+    --secondaryColor: #005c99;
+    --fontColor: #ffff;
+    --homeMainTextColor: #a91f44;
+    --activeColor: #7a99ac;
+    --visitedColor: #c2e4ff;
+    --shadowColor: rgba(0, 0, 0, 0.3);
+    --gridBgColor: #006bb3;
+    --headerBorderlineColor: #e4829e;
+    --headerBoxesBorderColor: #ffff;
+    --homePortraitBorder: 3px double white;
+    --fontFamilyNormal: "Poppins", sans-serif;
+    --fontFamilyHeader: "Sintony", sans-serif;
+    --fontSizeNormal: 16px;
+
+}
+
+
+body {
+    background-color: var(--primaryColor);
+    color: var(--fontColor);
+    font-family: var(--fontFamilyNormal);
+    font-size: var(--fontSizeNormal);
+}
+
+input, textarea, select, button, .button {
+    font-family: system-ui;
+}
+
+h1 {
+    font-family: var(--fontFamilyHeader);
+    font-size: 30px;
+}
+
+h2 {
+    font-family: var(--fontFamilyHeader);
+    font-size: 24px;
+}
+
+h3 {
+    font-family: var(--fontFamilyHeader);
+    font-size: 18px;
+}
+
+a {
+    font-family: var(--fontFamilyNormal);
+    color: var(--fontColor);
+}
+
+a:visited {
+    color: var(--visitedColor);
+}
+
+a:hover, a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--activeColor);
+}
+
+button, .button {
+    border: none;
+    font-family: inherit;
+    display: inline-block;
+    background-color: var(--secondaryColor);
+    color: var(--fontColor);
+    text-decoration: none;
+    padding: 10px;
+    margin: auto;
+    border-radius: 3px;
+    border-bottom: 2px solid var(--shadowColor);
+    transition: opacity 0.2s;
+}
+
+button:hover, .button:hover, button:focus, .button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid var(--headerBorderlineColor);
+}
+
+.page-header__item {
+    flex: 0 1 200px;
+    /* I added height myself */
+    height: 70px;
+}
+
+.page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+}
+
+/* erase the dots */
+.navigation-list {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--headerBoxesBorderColor);
+    width: 90px;
+    font-size: 85%;
+    text-align: center;
+    padding: 0.5%;
+}
+
+.navigation-list__item--active {
+    text-decoration: none;
+}
+
+#home-page-header {
+    border-bottom: none;
+}
+
+.profile {
+    display: inline-block;
+    position: relative;
+}
+
+.profile__portrait {
+    width: 100%;
+    float: right;
+    margin: auto 4%;
+    border: none;
+    border-top: var(--homePortraitBorder);
+    border-right: var(--homePortraitBorder);
+}
+
+.main-text {
+    position: absolute;
+    color: var(--homeMainTextColor);
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* start grid fallback */
+.grid__item {
+    display: inline-block;
+    width: 33%;
+}
+
+/* end grid fallback */
+
+@supports (display: grid) {
+    .grid {
+        display: grid;
+        /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 0;
+    }
+
+    .grid__item {
+        background-color: var(--gridBgColor);
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+
+    .grid__item:last-child {
+        grid-column: 3/3;
+        grid-row: 1/3;
+    }
+}
+@media all and (max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+}
+@media all and (min-width: 501px) and (max-width: 750px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+@media all and (max-width: 750px) {
+    .grid {
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto/auto;
+      grid-row: auto/auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.introduction-text {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+table {
+    border-spacing: 15px 5px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes color-change {
+    from {
+      fill: #fff;
+    }
+    to {
+      fill: var(--primaryColor);
+    }
+}
+
+.background {
+    animation-name: color-change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="img/my-favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/necolas.github.io_normalize.css_latest_normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="page-header">
+            <!-- Add your logo here, correct alt text -->
+            <img src="http://via.placeholder.com/200x70" class="page-header__item" alt="Personal logo of Lisa Gringl, a text logo in uppercase letters that consists of my name">
+            <nav class="main-navigation page-header__item">
+                <ul role="menubar" class="navigation-list">
+                    <li role="presentation">
+                        <a href="index.html" role="menuitem" class="navigation-list__item">HOME</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="about.html" role="menuitem" class="navigation-list__item">ABOUT</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="work.html" role="menuitem" class="navigation-list__item">WORK</a>
+                    </li>          
+                    <li role="presentation">
+                        <a href="contact.html" role="menuitem" class="navigation-list__item--active">CONTACT</a>
+                    </li>      
+                </ul> 
+            </nav>        
+        </header>
+        
+        <main>
+            <h1>Contact</h1>
+            <div>
+                Anastasia Fazius<br>
+                Nagelsweg 20b<br>
+                20097 Hamburg<br>
+                Germany<br>
+                <br>
+                Tel <a href="tel:+49(0)178-1472123">+49 (0) 178-1472123</a><br>
+                <a href="mailto:AnastasiaFazius@gmx.de">AnastasiaFazius [@] gmx [dot] de</a><br>
+                Skype <a href="skype:live:chetaa.de?call">Anastasia Fazius</a>
+            </div>
+            <br>
+            <!-- Complete action attribute -->
+            <form action="#" method="post" id="contact-form">
+                <label class="standard-label" for="contact-email">E-mail: </label>
+                <input type="email" id="contact-email" required>
+    
+                <label class="standard-label" for="contact-telephone">Telephone: </label>
+                <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+
+                <label class="standard-label" for="contact-message">Message: </label>
+                <textarea maxlength="240" id="contact-message" required></textarea>
+
+                <input type="submit" value="Send message">
+            </form>
+        </main>
+
+        <footer class="page-footer">
+            <p>
+                Find me on
+            </p>
+            <div class="social-media">
+                <!-- Fix for relevant links -->
+                <a href="https://github.com/nastja4" target="_blank"><img src="img/github_icon.svg" alt="A link in the form of Github icon"></a>
+                <img src="img/twitter_icon.svg" alt="Twitter icon">
+                <img src="img/linkedin_icon.svg" alt="LinkedIn icon">
+            </div>
+        </footer>
+        <script src="js/tota11y.min.js"></script>
+    </body>
+</html>
