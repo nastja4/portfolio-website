@@ -65,6 +65,10 @@ a:active {
     color: #adc4d3;
 }
 
+.check-my-code:active {
+    color: #a91f44;
+}
+
 button,
 .button {
     border: none;
