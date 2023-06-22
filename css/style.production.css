@@ -20,9 +20,11 @@ input, textarea, select, button {
 Colors used
 
 Text Color (white): #fff;
-Primary Color (strong red): #AA1F46; (931B3B)
-Secondary Color (deep blue): #00426E; (! 005C99 C2E4FF)
+Primary Color (strong red): #AA1F46 (AA1D42 max light on white bg); (931B3B), main text #A91F44
+Secondary Color (deep blue): #00426E; (max light 005C99) C2E4FF 00497A
 Accent Color ():
+visited for white bg, blue (max light): 0057AD
+grid bg: 005C99
 */
 h1 {
     font-family: "Sintony", sans-serif;
@@ -49,13 +51,17 @@ a:visited {
     color: #c2e4ff;
 }
 
+.check-my-code:visited {
+    color: #AA1D42;
+}
+
 a:hover, a:focus {
     /* No underlining when hovering over a link */
     text-decoration: none;
 }
 
 a:active {
-    /* selected link */ 
+    /* selected link */
     color: #adc4d3;
 }
 
@@ -197,10 +203,11 @@ button:focus,
         margin: 0;
     }
     .grid__item {
-        background-color: #006bb3;
+        background-color: #005C99;
         width: auto;
         min-height: auto;
         margin: 0;
+        border-radius: 5px;
     }
     .grid__item:last-child {
         -ms-grid-column: 3;
