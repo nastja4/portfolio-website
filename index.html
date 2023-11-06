@@ -9,7 +9,8 @@
         <!-- Improve my favicon -->
         <link rel="shortcut icon" href="img/my-favicon.ico">
         <link rel="stylesheet" type="text/css" href="css/necolas.github.io_normalize.css_latest_normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/styles-origin.css">
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,6 +35,7 @@
                     </li>
                     <li role="presentation">
                         <a href="about.html" role="menuitem" class="navigation-list__item">ABOUT</a>
+                        <!-- <a href="#section_about" role="menuitem" class="navigation-list__item">ABOUT</a> -->
                     </li>
                     <li role="presentation">
                         <a href="work.html" role="menuitem" class="navigation-list__item">WORK</a>
@@ -45,20 +47,26 @@
             </nav>        
         </header>   
              
-        <main class="profile">
-            <!-- Add my Portrait image, change the content here -->
-            <img src="img/foto-anastasia-fazius2.jpg" class="profile__portrait" alt="A photo of me">
-            <div class="main-text">    
-                <h1>Welcome to my page!</h1>
-                <p>
-                    My name is Anastasia Fazius.
-                </p>
-                <p>
-                    I am a <span>web</span> developer from Hamburg.
-                </p>                
-                <!-- Placeholder for the link-->
-                <a href="#" class="check-my-code">Check out some of my code</a>                      
-            </div>  
+        <main class="profile">      
+            <!-- <div class="mainFoto-and-text_content"> -->
+                <!-- Add my Portrait image, change the content here -->
+                <div class="profile__portrait-container">
+                    <!-- <img class="profile__portrait" src="img/foto-anastasia-fazius2.jpg" alt="A photo of Anastasia Fazius" > -->
+                </div>
+                <div class="main-text">    
+                    <h1 class="welcome_line">Welcome to my page!</h1>
+                    <p>
+                        My name is Anastasia Fazius.
+                    </p>
+                    <p>
+                        I am a <span>web</span> developer from Hamburg.
+                    </p>     
+                    <p>        
+                    <!-- Placeholder for the link-->
+                        <a href="#" class="check-my-code">Check out some of my code</a> 
+                    </p>                     
+                </div>  
+            <!-- </div>             -->
         </main>        
         <footer class="page-footer">
             <p>
@@ -71,10 +79,62 @@
                 <img src="img/linkedin_icon.svg" alt="LinkedIn icon">
             </div>
         </footer>
-        <script src="js/tota11y.min.js"></script>
         
+
+
+        <!-- <br>
+        <br>
+        <br> -->
+        <!-- ------------------section ABOUT------------------
+        ------------------------------------------------- -->
+        <!-- <section id="section_about">
+            <div class="about">
+                <h1>About</h1>
+                <p>Some information about me and what I enjoy dedicating my time to:</p>
+                <ul class="introduction-text">
+                    <li>Front-/Backend development</li>
+                    <li>Test driven development</li>
+                    <li>Enjoying the simple pleasure of taking leisurely strolls in my city Hamburg or other beautiful cities, exploring new travel destinations, and immersing myself in the electrifying atmosphere of live rock concerts</li>
+                </ul>                
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Skills</th>
+                            <th scope="col">Years of Experience</th>
+                            <th scope="col">Level of Expertise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">HTML</th>
+                            <td>0,5</td>
+                            <td>Beginner</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">CSS</th>
+                            <td>0,5</td>
+                            <td>Beginner</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">JavaScript</th>
+                            <td>0,5</td>
+                            <td>Beginner</td>
+                        </tr>
+                    </tbody>
+                </table>
+                 
+                <br> -->
+                <!-- ?may be only veiwing pdf -->
+                <!-- <a href="files/CV_AnastasiaFazius.pdf" class="button" download>Download my CV</a>
+            </div>
+        </section> -->
+        <!-- ---------------end os section ABOUT------------------
+        ----------------------------------------------------- -->
+
+        <script src="js/tota11y.min.js"></script>        
         <!-- Button -->
-        <a href="#">Default Link</a>
-        <button type="button">Default Button</button>        
+        <!-- <a href="#">Default Link</a>
+        <button type="button">Default Button</button>         -->
     </body>
 </html>
