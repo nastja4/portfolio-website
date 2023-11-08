@@ -29,16 +29,16 @@
             <!-- <img src="http://via.placeholder.com/200x70" class="page-header__item" alt="Personal logo of Lisa Gringl, a text logo in uppercase letters that consists of my name"> -->
             <nav class="main-navigation page-header__item">
                 <ul role="menubar" class="navigation-list">                   
-                    <li role="presentation">
+                    <li role="presentation" onclick="redirectTo('index.html');" style="cursor: pointer;">
                         <a href="index.html" role="menuitem" class="navigation-list__item">HOME</a>
                     </li>
-                    <li role="presentation">
+                    <li role="presentation" style="border: 3px solid white; cursor: pointer;" onclick="redirectTo('about.html');">
                         <a href="about.html" role="menuitem" class="navigation-list__item--active">ABOUT</a>
                     </li>
-                    <li role="presentation">
+                    <li role="presentation" onclick="redirectTo('work.html');" style="cursor: pointer;">
                         <a href="work.html" role="menuitem" class="navigation-list__item">WORK</a>
                     </li>
-                    <li role="presentation">
+                    <li role="presentation" onclick="redirectTo('contact.html');" style="cursor: pointer;">
                         <a href="contact.html" role="menuitem" class="navigation-list__item">CONTACT</a>
                     </li>
                 </ul> 
@@ -58,9 +58,9 @@
                 <table>
                     <thead>
                         <tr>
-                            <th scope="col">Skills</th>
-                            <th scope="col">Years of Experience</th>
-                            <th scope="col">Level of Expertise</th>
+                            <th scope="col" style="letter-spacing: 1px;">Skills</th>
+                            <th scope="col" style="letter-spacing: 1px;">Years of Experience</th>
+                            <th scope="col" style="letter-spacing: 1px;">Level of Expertise</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -100,6 +100,7 @@
             </div>
         </footer>
         <script src="js/tota11y.min.js"></script>
+        <script src="js/main.js"></script> 
     </body>
 </html>
              

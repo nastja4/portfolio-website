@@ -30,71 +30,99 @@
             <!-- <img src="http://via.placeholder.com/200x70" class="page-header__item" alt="Personal logo of Lisa Gringl, a text logo in uppercase letters that consists of my name"> -->
             <nav class="main-navigation page-header__item">
                 <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
+                    <li role="presentation" onclick="redirectTo('index.html');" style="cursor: pointer;">
                         <a href="index.html" role="menuitem" class="navigation-list__item">HOME</a>
                     </li>
-                    <li role="presentation">
+                    <li role="presentation" onclick="redirectTo('about.html');" style="cursor: pointer;">
                         <a href="about.html" role="menuitem" class="navigation-list__item">ABOUT</a>
                     </li>
-                    <li role="presentation">
+                    <li role="presentation" onclick="redirectTo('contact.html');" style="border: 3px solid white; cursor: pointer;">
                         <a href="work.html" role="menuitem" class="navigation-list__item--active">WORK</a>
                     </li>                    
-                    <li role="presentation">
+                    <li role="presentation" onclick="redirectTo('contact.html');" style="cursor: pointer;">
                         <a href="contact.html" role="menuitem" class="navigation-list__item">CONTACT</a>
                     </li>
                 </ul> 
             </nav>        
         </header>
 
-        <main>
-            <section class="work_page-section">
-                <h1>Work</h1>
-                <div class="grid">
-                    <!-- Grid item (project list) are here -->
-                    <div class="grid__item">
-                        <h2>Work #1</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor posuere risus quis ultricies. 
-                        </p>
-                        <a href="#">See project on Githab</a>                    
+        <main class="work_page-section"> 
+            <h1>Work</h1>
+            <p>
+                Here you can get acquainted with some projects I accomplished during my full-stack web development course.
+            </p>
+            <br>
+            <div class="grid">
+                <!-- Grid item (project list) are here -->
+                <div class="grid__item">
+                    <p style="font-size: 20px;">Project #1</p>
+                    <h2>The "Pokédex" JS App</h2>
+                    <div>
+                        <img src="img/pokedex_screenshot.png" class="work__screenshot" alt="A screenshot of the Pokedex project"/>
                     </div>
-                    <div class="grid__item">
-                        <h2>Work #2</h2>
-                        <p>
-                            Duis vitae arcu eu quam volutpat sodales et a justo. Maecenas odio est, volutpat id eros in, fermentum rutrum tortor. Ut nunc metus, gravida sit amet dui id, lobortis interdum dolor. Integer consequat dapibus lacus, sit amet mattis felis aliquet ac.  
-                        </p>
-                        <a href="#">See project on Githab</a>
-                    </div>
-                    <div class="grid__item">
-                        <h2>Work #3</h2>
-                        <p>
-                            Proin ornare dapibus ipsum non lobortis. Suspendisse sodales vulputate elit, a ullamcorper neque tincidunt ut.  
-                        </p>
-                        <a href="#">See project on Githab</a>
-                    </div>
-                    <div class="grid__item">
-                        <h2>Work #4</h2>
-                        <p>
-                            Sed rhoncus et urna ac rutrum. Phasellus pellentesque felis nec euismod porta. Aliquam facilisis velit id turpis tincidunt, eget finibus sem varius. Praesent lacinia tempor quam, ut mollis felis aliquet et.  
-                        </p>
-                        <a href="#">See project on Githab</a>
-                    </div>
-                    <div class="grid__item">
-                        <h2>Work #5</h2>
-                        <p>
-                            Mauris ut facilisis orci, in laoreet libero. Morbi sit amet risus dolor. Suspendisse potenti. Suspendisse ac sem ante.  
-                        </p>
-                        <a href="#">See project on Githab</a>
-                    </div>
-                    <div class="grid__item">
-                        <h2>Work #6</h2>
-                        <p>
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer at urna eget nunc cursus hendrerit vitae nec sem.   
-                        </p>
-                        <a href="#">See project on Githab</a>
-                    </div>
+                    <p>
+                        The "Pokédex" is a small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail. The app displays a list of Pokemon, clicking on which opens a window with some detailed information about them, as well as an image of a pokemon. 
+                    </p>
+                    <a href="https://github.com/nastja4/simple-js-app_Pokedex" class="seeProject-link" target="_blank">See the project on GitHub</a>                    
                 </div>
-            </section>            
+                <div class="grid__item">
+                    <p style="font-size: 20px;">Project #2</p>
+                    <h2>API for the "myFlix" movie app</h2>
+                    <div class="api-container" style="margin: 0 auto">
+                        <img src="img/pic_movie-api.png" class="work__screenshot api_pic" alt="An image with the word API"/>
+                    </div>
+                    <p>
+                        This API (Application Programming Interface) is the server-side component of the myFlix web application, which serves as the backend for managing and providing access to information about different movies, directors, and genres. Users can create profiles, save their favorite movies, and more. The actual storage of data is managed by a database, and this component handles the retrieval and processing of that data.
+                    </p>
+                    <a href="https://github.com/nastja4/movie_api" class="seeProject-link" target="_blank">See the project on GitHub</a>
+                </div>
+                <div class="grid__item">
+                    <p style="font-size: 20px;">Project #3</p>
+                    <h2>The "myFlix" React App</h2>
+                    <div>
+                        <img src="img/myflix-react_screenshot.png" class="work__screenshot" alt="A screenshot of the myflix-React project"/>
+                    </div>
+                    <p>
+                        The myFlix React App is a client-side application built to complement the existing server-side code (REST API and database) of the myFlix movie app. The project is a part of the Achievement 3 task, focusing on full-stack JavaScript development using the MERN (MongoDB, Express, React, Node.js) stack.
+                    </p>
+                    <a href="https://github.com/nastja4/myFlix-client" class="seeProject-link" target="_blank">See project on GitHub</a>
+                </div>
+                <div class="grid__item">
+                    <p style="font-size: 20px;">Project #4</p>
+                    <h2>The "Meet App"</h2>
+                    <div>
+                        <img src="img/meet_screenshot.png" class="work__screenshot" alt="A screenshot of the Meet App project"/>
+                    </div>
+                    <p>
+                        Meet App is a serverless, progressive web application (PWA) built with React, following a test-driven development (TDD) approach. The app utilizes the Google Calendar API to fetch upcoming events and offers various features for users to explore and manage events.
+                    </p>
+                    <a href="https://github.com/nastja4/meet" class="seeProject-link" target="_blank">See the project on GitHub</a>
+                </div>
+                <div class="grid__item">
+                    <p style="font-size: 20px;">Project #5</p>
+                    <h2> The "Bona Chat" App</h2>
+                    <div style="text-align: center;">
+                        <img src="img/chat_screenshot.jpeg" class="work__screenshot chat__screenshot" alt="A screenshot of the Chat App project"/>
+                        <img src="img/chat_screenshot2.jpg" class="work__screenshot chat__screenshot" alt="A screenshot of the Chat App project"/>
+                    </div>
+                    <p>
+                        A mobile chat application built with React Native and Expo, offering real-time chat, image sharing, and location sharing features. This app provides an accessible chat interface for users to communicate with friends and family. 
+                    </p>                    
+                    <a href="https://github.com/nastja4/chat_app" class="seeProject-link" target="_blank">See the project on GitHub</a>
+                </div>
+                <div class="grid__item">
+                    <p style="font-size: 20px;">Project #6</p>
+                    <h2>The "myFlix" Angular App</h2>
+                    <div>
+                        <img src="img/myflix-angular_screenshot.png" class="work__screenshot" alt="A screenshot of the MyFlix Angular App project"/>
+                    </div>
+                    <p>
+                        The myFlix Angular App is a single-page, responsive movie application built using Angular. It serves as the client-side interface for the myFlix movie app, interacting with the existing server-side code and database through REST API endpoints.
+                    </p>
+                    <a href="https://github.com/nastja4/myFlix_Angular-client" class="seeProject-link" target="_blank">See the project on GitHub</a>
+                </div>
+                
+            </div>                      
         </main>
         
         <footer class="page-footer">
@@ -109,5 +137,6 @@
             </div>
         </footer>
         <script src="js/tota11y.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

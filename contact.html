@@ -29,28 +29,28 @@
             <!-- <img src="http://via.placeholder.com/200x70" class="page-header__item" alt="Personal logo of Lisa Gringl, a text logo in uppercase letters that consists of my name"> -->
             <nav class="main-navigation page-header__item">
                 <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
+                    <li role="presentation" onclick="redirectTo('index.html');" style="cursor: pointer;">
                         <a href="index.html" role="menuitem" class="navigation-list__item">HOME</a>
                     </li>
-                    <li role="presentation">
+                    <li role="presentation" onclick="redirectTo('about.html');" style="cursor: pointer;">
                         <a href="about.html" role="menuitem" class="navigation-list__item">ABOUT</a>
                     </li>
-                    <li role="presentation">
+                    <li role="presentation" onclick="redirectTo('work.html');" style="cursor: pointer;">
                         <a href="work.html" role="menuitem" class="navigation-list__item">WORK</a>
                     </li>          
-                    <li role="presentation">
+                    <li role="presentation" onclick="redirectTo('work.html');" style="border: 3px solid white; cursor: pointer;">
                         <a href="contact.html" role="menuitem" class="navigation-list__item--active">CONTACT</a>
                     </li>      
                 </ul> 
             </nav>        
         </header>
         
-        <main>
+        <main style="padding: 20px; padding-top: 0;">
             <h1>Contact</h1>
             <div>
-                Anastasia Fazius<br>
-                Nagelsweg 20b<br>
-                20097 Hamburg<br>
+                <!-- Anastasia Fazius<br>
+                Nagelsweg 20b<br> -->
+                20097 Hamburg,<br>
                 Germany<br>
                 <br>
                 Tel <a href="tel:+49(0)178-1472123">+49 (0) 178-1472123</a><br>
@@ -63,12 +63,18 @@
                 <label class="standard-label" for="contact-email">E-mail: </label>
                 <input type="email" id="contact-email" required>
     
+                <br>
+                <br>
                 <label class="standard-label" for="contact-telephone">Telephone: </label>
                 <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
 
+                <br>
+                <br>
                 <label class="standard-label" for="contact-message">Message: </label>
                 <textarea maxlength="240" id="contact-message" required></textarea>
 
+                <br>
+                <br>
                 <input type="submit" value="Send message">
             </form>
         </main>
@@ -85,5 +91,6 @@
             </div>
         </footer>
         <script src="js/tota11y.min.js"></script>
+        <script src="js/main.js"></script> 
     </body>
 </html>

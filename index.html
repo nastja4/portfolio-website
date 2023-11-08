@@ -30,17 +30,17 @@
             <!-- <img src="http://via.placeholder.com/200x70" class="page-header__item" alt="Personal logo of Lisa Gringl, a text logo in uppercase letters that consists of my name"> -->
             <nav class="main-navigation page-header__item">
                 <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">HOME</a>
+                    <li role="presentation" style="border: 3px solid white; cursor: pointer;" onclick="redirectTo('index.html');" >
+                        <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active" >HOME</a>
                     </li>
-                    <li role="presentation">
+                    <li role="presentation" onclick="redirectTo('about.html');" style="cursor: pointer;">
                         <a href="about.html" role="menuitem" class="navigation-list__item">ABOUT</a>
                         <!-- <a href="#section_about" role="menuitem" class="navigation-list__item">ABOUT</a> -->
                     </li>
-                    <li role="presentation">
+                    <li role="presentation" onclick="redirectTo('work.html');" style="cursor: pointer;">
                         <a href="work.html" role="menuitem" class="navigation-list__item">WORK</a>
                     </li>
-                    <li role="presentation">
+                    <li role="presentation" onclick="redirectTo('contact.html');" style="cursor: pointer;">
                         <a href="contact.html" role="menuitem" class="navigation-list__item">CONTACT</a>
                     </li>
                 </ul> 
@@ -51,10 +51,10 @@
             <!-- <div class="mainFoto-and-text_content"> -->
                 <!-- Add my Portrait image, change the content here -->
                 <div class="profile__portrait-container">
-                    <!-- <img class="profile__portrait" src="img/foto-anastasia-fazius2.jpg" alt="A photo of Anastasia Fazius" > -->
+                    <img class="profile__portrait" src="img/foto-anastasia-fazius3.jpg" alt="A photo of Anastasia Fazius" >
                 </div>
                 <div class="main-text">    
-                    <h1 class="welcome_line">Welcome to my page!</h1>
+                    <h1 class="welcome_line">Welcome to my website!</h1>
                     <p>
                         My name is Anastasia Fazius.
                     </p>
@@ -63,7 +63,7 @@
                     </p>     
                     <p>        
                     <!-- Placeholder for the link-->
-                        <a href="#" class="check-my-code">Check out some of my code</a> 
+                        <a href="https://github.com/nastja4" class="check-my-code" target="_blank">Check out some of my code</a> 
                     </p>                     
                 </div>  
             <!-- </div>             -->
@@ -133,7 +133,8 @@
         <!-- ---------------end os section ABOUT------------------
         ----------------------------------------------------- -->
 
-        <script src="js/tota11y.min.js"></script>        
+        <script src="js/tota11y.min.js"></script>    
+        <script src="js/main.js"></script>      
         <!-- Button -->
         <!-- <a href="#">Default Link</a>
         <button type="button">Default Button</button>         -->
