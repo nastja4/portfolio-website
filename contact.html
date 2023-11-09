@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Contact Anastasia Fazius</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="shortcut icon" href="img/my-favicon.ico">
         <link rel="stylesheet" type="text/css" href="css/necolas.github.io_normalize.css_latest_normalize.css">
@@ -38,18 +38,16 @@
                     <li role="presentation" onclick="redirectTo('work.html');" style="cursor: pointer;">
                         <a href="work.html" role="menuitem" class="navigation-list__item">WORK</a>
                     </li>          
-                    <li role="presentation" onclick="redirectTo('work.html');" style="border: 3px solid white; cursor: pointer;">
+                    <li role="presentation" onclick="redirectTo('work.html');" style="border: 2px solid white; cursor: pointer;">
                         <a href="contact.html" role="menuitem" class="navigation-list__item--active">CONTACT</a>
                     </li>      
                 </ul> 
             </nav>        
         </header>
         
-        <main style="padding: 20px; padding-top: 0;">
+        <main style="padding: 20px; padding-top: 0; height: 100%;">
             <h1>Contact</h1>
-            <div>
-                <!-- Anastasia Fazius<br>
-                Nagelsweg 20b<br> -->
+            <div>                
                 20097 Hamburg,<br>
                 Germany<br>
                 <br>
@@ -65,7 +63,7 @@
     
                 <br>
                 <br>
-                <label class="standard-label" for="contact-telephone">Telephone: </label>
+                <label class="standard-label" for="contact-telephone">Phone number: </label>
                 <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
 
                 <br>
@@ -75,7 +73,7 @@
 
                 <br>
                 <br>
-                <input type="submit" value="Send message">
+                <input type="submit" class="button" value="Send message">
             </form>
         </main>
 
@@ -89,8 +87,8 @@
                 <img src="img/twitter_icon.svg" alt="Twitter icon">
                 <img src="img/linkedin_icon.svg" alt="LinkedIn icon">
             </div>
-        </footer>
-        <script src="js/tota11y.min.js"></script>
+        </footer>        
         <script src="js/main.js"></script> 
+        <script src="js/tota11y.min.js"></script>
     </body>
 </html>
