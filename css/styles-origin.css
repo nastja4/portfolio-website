@@ -4,9 +4,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    /* position: relative; */
+    flex-direction: column;    
 }
 
 main {
@@ -30,11 +28,10 @@ button {
 Colors used
 
 Text Color (white): #fff;
-Primary Color (strong red): #aa1f46 (AA1D42 max light on white bg); (931B3B), main text #A91F44
-Secondary Color (deep blue): #00426E; (max light 005C99) C2E4FF 00497A
+Primary Color (strong red): #aa1f46, main text #931B3D
+Secondary Color (deep blue): #005c99; 
 Accent Color ():
-visited for white bg, blue (max light): 0057AD
-grid bg: 005C99
+grid bg: 005c99
 */
 h1 {
     font-family: "Sintony", sans-serif;
@@ -110,20 +107,18 @@ button:focus,
 * {
     box-sizing: border-box;
 }
-               /* -------------------page-Header----------------------------- */
+
+               /* -------------------page-Header----------------- */
 
 .page-header {
     display: flex;
     width: 100%;
-    /* height: 100%; */
     padding: 20px;
     border-bottom: 1px solid #e4829e;
-    /* box-shadow: 0 3px 5px lightcyan; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
     position: fixed;
     background-color: #aa1f46;
-    /* position: static; */
+    z-index: 1000;
 }
 
 /* No header-border for home-page */
@@ -160,7 +155,6 @@ button:focus,
 .navigation-list {
     display: flex;
     list-style-type: none;
-    /* text-align: right; */
     justify-content: flex-end;
 }
 
@@ -176,7 +170,11 @@ button:focus,
     padding: 4px 0;    
 }
 
-@media (max-width: 768px) {
+.navigation-list li:hover {
+    font-weight: bold;
+}
+
+@media all and (max-width: 768px) {
     .navigation-list {
         flex-wrap: wrap; /* Allow items to wrap to the next line */
     }
@@ -200,68 +198,32 @@ button:focus,
     color: white;
 }
 
-                  /* ---------------------- MAIN (foto + text) ---------------- */
 
-/* height: 100vh; This sets the height of an element to be 100% of the viewport height. 
-The viewport height is the height of the visible portion of the browser window. It's an 
-absolute unit of measurement that ensures the element takes up the full height of the
- visible screen, regardless of its parent elements or their heights. */
+            /* ---------------------- HOME-- main (foto + text) ---------------- */
 
-/* height: 100%; to an element, it will take up 100% of the height of its nearest parent 
-element that has a defined height. */
-
-.profile {
-    /* flex: 1; */
-    position: relative;
-    /* display: inline-block; */
+.profile {    
+    position: relative;    
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* width: 100%; */
-    /* max-height: 100%; */
-    /* height: 100%; */
+    justify-content: center;    
     align-items: center;
-    height: 100%;
-    /* height: 100%; */
+    height: 100%;    
 }
 
 .profile__portrait-container {    
     display: flex;
-    width: 100%;
-    /* height: 70%; */
-    /* height: 100vh; */
+    width: 100%;    
     justify-content: flex-end;
-    height: 600px;
-    /* max-height: 100%; */
-    /* overflow: hidden; */    
-    /* position: relative;
-    display: inline-block; */
-    background-color: #eaeae8;  /*  color e8e8e8 */
-    margin-right: 7%;
-    /* border: none; */
-    /* box-sizing: border-box; */
-    border-top: 3px double #aa1f46; /* Outer border (doubled) */
-    border-right: 3px double #aa1f46; 
-    
-    /* border-top: 3px double white;
-    border-right: 3px double white;     */
+    height: 600px;    
+    background-color: #eaeae8;  
+    margin-right: 7%;    
+    border-top: 3px double #aa1f46; 
+    border-right: 3px double #aa1f46;    
 }
 
 .profile__portrait {
     height: 100%;
-    width: auto;
-    /* display: block; */
-    /* object-fit: contain; */
-    /* float: left;
-    object-fit: cover; */
-    /* height: auto; */
-    /* margin: auto 4%; */
-    /* margin-right: 4%;
-    border: none;
-    border-top: 3px double white;
-    border-right: 3px double white;
-    background-color: aqua; */
-    /* height: 100%; */
+    width: auto;    
 }
 
 .main-text {
@@ -269,19 +231,14 @@ element that has a defined height. */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #931B3D;  /*  931B3D , old bardo a91f44*/
-    text-align: center;   
-    /* z-index: 1;  */
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+    color: #931B3D;  
+    text-align: center;      
 }
 
 
-                     /* ---------------------------- page-Foter ----------------- */
+                     /* -------------- page-Foter ------------ */
 .page-footer {
     justify-content: flex-end;
-    /* height: 100%; */
     padding: 20px;
     clear: both;
     display: flex;
@@ -289,7 +246,7 @@ element that has a defined height. */
     text-align: center;
 }
 
-                   /* ------------------ WORK PAGE --------------- */
+                   /* ---------------------- WORK PAGE ------------------- */
 
 .work_page-section {
 padding: 20px;
@@ -298,18 +255,25 @@ padding-top: 0;
 
 /* start grid fallback */
 .grid__item {
-    /* display: inline-block; */
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     width: 33%;
 }
 
+.projectTechnologies-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 10px;
+}
+
+.projectTechnologies-list li::before {
+    content: "-";
+}
 /* end grid fallback */
 
 @supports (display: grid) {
     .grid {
         display: grid;
-
         /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
@@ -317,30 +281,41 @@ padding-top: 0;
     }
 
     .grid__item {
+        display: flex;
         background-color: #005c99;
         width: auto;
         min-height: auto;
         margin: 0;
         border-radius: 5px;
         padding: 10px;
-        box-shadow: 6px 6px lightblue;
-        /* box-shadow: 10px 10px 5px lightblue; */
+        /* box-shadow: 6px 6px lightblue; */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); 
+        transition: transform 0.2s ease;
     }
 
-    /* .grid__item:last-child {
-        grid-column: 3 / 3;
-        grid-row: 1 / 3;
-    } */
+    .grid__item:hover {
+        transform: scale(1.01);
+        box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.4); 
+        cursor: pointer;
+    }
+}
+
+@media all and (min-width: 1470px) {
+    .work_page-section,
+    .about,
+    .contact_page-section {        
+        padding: 0 8%;
+    }
 }
 
 
-@media all and (min-width: 150px) and (max-width: 389px) {
+@media all and (max-width: 479px) {
     main {
         margin-top: 220px;
     }
 }
 
-@media all and (min-width: 390px) and (max-width: 662px) {
+@media all and (min-width: 480px) and (max-width: 679px) {
     main {
         margin-top: 150px;
     }
@@ -372,23 +347,21 @@ padding-top: 0;
         grid-gap: 10px;
     }
 
-    /* .grid__item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-    } */
-
     h1 {
         font-size: 22px;
     }
 }
 
 
-.seeProject-link:visited {
+.seeProject-link:visited,
+.goToAppWebsite-link:visited {
     color: white;
 }
 
 .seeProject-link:active,
-.seeProject-link:hover {
+.seeProject-link:hover,
+.goToAppWebsite-link:active,
+.goToAppWebsite-link:hover {
     font-weight: bold;
     /* letter-spacing: 1px; */
 }
@@ -411,12 +384,12 @@ padding-top: 0;
 
 
 
-          /* --------------------- ABOUT PAGE ----------------------- */
+          /* ----------------------- ABOUT PAGE ----------------------- */
 .about {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 10%;
 }
 
 .introduction-text {
@@ -431,42 +404,69 @@ table {
     text-align: left;
 }
 
-        /* SVG - color-changing of svg's bgr  */
 svg {
-    /* width: 100%;
-    height: auto; */
-    /* height: 50%;
-    width: auto;
-    position: absolute;
-    z-index: -1;
-    opacity: 0.5;
-    flex-shrink: 1; */
-    max-height: 100%;
-    
+    width: 20%;
+    height: 100%;
+    margin: 10px;    
 }
 
-.svg-container {
-    /* position: relative;
-    z-index: 1; */
-    
+.svg-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;    
 }
 
-@keyframes color-change {
-    from {
-        fill: white;
+        /*        SVG - color-changing     */
+
+@keyframes colorChange {
+    0% {
+      fill: black;
     }
-
-    to {
-        fill: #aa1f46;
+    50% {
+      fill: #aa1f46;
     }
-}
+    100% {
+      fill: black;
+    }
+  }
 
 .background {
-    animation-name: color-change;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease;
+    animation: colorChange 5s infinite;     
 }
 
+#path55 {
+    animation-delay: 2s;
+}
+
+#path41 {
+    animation-delay: 4s;
+}
+
+#path11 {
+    animation-delay: 1s;
+}
+
+#path69 {
+    animation-delay: 0s;
+    
+}
+
+#path73 {
+    animation-delay: 2s;
+    
+}
+
+#path25 {
+    animation-delay: 1s;
+}
+
+#path35 {
+    animation-delay: 0s;
+}
+
+#path51 {
+    animation-delay: 3s;
+}
+
+                /* ----------------------- CONTACT PAGE ------------------- */
 

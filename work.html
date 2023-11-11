@@ -3,8 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Work</title>
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <title>Work</title>    
         <meta http-equiv="X-UA-Compatible" content="ie=edge">        
         <!-- Improve my favicon -->
         <link rel="shortcut icon" href="img/my-favicon.ico">
@@ -24,10 +23,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="page-header">
-            <!-- Add your logo here -->
-            <p class="page-header__item" id="logo-name">Anastasia Fazius</p>
-            <!-- <img src="http://via.placeholder.com/200x70" class="page-header__item" alt="Personal logo of Lisa Gringl, a text logo in uppercase letters that consists of my name"> -->
+        <header class="page-header">            
+            <p class="page-header__item" id="logo-name">Anastasia Fazius</p>            
             <nav class="main-navigation page-header__item">
                 <ul role="menubar" class="navigation-list">
                     <li role="presentation" onclick="redirectTo('index.html');" style="cursor: pointer;">
@@ -49,7 +46,7 @@
         <main class="work_page-section"> 
             <h1>Work</h1>
             <p>
-                Here you can get acquainted with some projects I accomplished during my Full-Stack Web Development course.
+                Here you can get acquainted with some projects I accomplished during my Full-Stack Web Development course
             </p>
             <br>
             <div class="grid">
@@ -59,10 +56,37 @@
                     <h2>The "Pokédex" JS App</h2>
                     <div>
                         <img src="img/pokedex_screenshot.png" class="work__screenshot" alt="A screenshot of the Pokedex project"/>
-                    </div>
+                    </div>                    
                     <p>
                         The "Pokédex" is a small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail. The app displays a list of Pokemon, clicking on which opens a window with some detailed information about them, as well as an image of a pokemon. 
                     </p>
+                    <p>
+                        Technologies and techniques used:
+                    </p>
+                    <ul class="projectTechnologies-list">
+                        <li>
+                            HTML
+                        </li>
+                        <li>
+                            CSS
+                        </li>
+                        <li>
+                            JavaScript
+                        </li>
+                        <li>                            
+                            Using Ajax to fetch data asynchronously from an external API (Pokémon API)
+                        </li>                        
+                        <li>
+                            Bootstrap (CSS Framework)
+                        </li>
+                        <li>
+                            jQuery
+                        </li>
+                    </ul>
+                    <br>
+                    <br>
+                    <a href="https://nastja4.github.io/simple-js-app_Pokedex/" class="goToAppWebsite-link" target="_blank">Go to the App website</a>
+                    <br>
                     <a href="https://github.com/nastja4/simple-js-app_Pokedex" class="seeProject-link" target="_blank">See the project on GitHub</a>                    
                 </div>
                 <div class="grid__item">
@@ -74,6 +98,34 @@
                     <p>
                         This API (Application Programming Interface) is the server-side component of the myFlix web application, which serves as the backend for managing and providing access to information about different movies, directors, and genres. Users can create profiles, save their favorite movies, and more. The actual storage of data is managed by a database, and this component handles the retrieval and processing of that data.
                     </p>
+                    <p>
+                        Technologies and techniques used:
+                    </p>
+                    <ul class="projectTechnologies-list">
+                        <li>
+                            Node.js and Express
+                        </li>
+                        <li>
+                            MongoDB and Mongoose
+                        </li>
+                        <li>
+                            REST Architecture
+                        </li>
+                        <li>
+                            Middleware Modules (body-parser, morgan)
+                        </li>
+                        <li>                            
+                            User Authentication and Authorization
+                        </li>                        
+                        <li>
+                            Data Validation Logic
+                        </li>
+                        <li>
+                            Postman
+                        </li>
+                    </ul>
+                    <br>
+                    <br>
                     <a href="https://github.com/nastja4/movie_api" class="seeProject-link" target="_blank">See the project on GitHub</a>
                 </div>
                 <div class="grid__item">
@@ -85,7 +137,37 @@
                     <p>
                         The myFlix React App is a client-side application built to complement the existing server-side code (REST API and database) of the myFlix movie app. The project is a part of the Achievement 3 task, focusing on full-stack JavaScript development using the MERN (MongoDB, Express, React, Node.js) stack.
                     </p>
-                    <a href="https://github.com/nastja4/myFlix-client" class="seeProject-link" target="_blank">See project on GitHub</a>
+                    <p>
+                        Technologies and techniques used:
+                    </p>
+                    <ul class="projectTechnologies-list">
+                        <li>
+                            React
+                        </li>
+                        <li>
+                            React Router
+                        </li>
+                        <li>
+                            React Bootstrap
+                        </li>
+                        <li>
+                            Parcel
+                        </li>
+                        <li>                            
+                            React Redux 
+                        </li>                        
+                        <li>
+                            Bootstrap
+                        </li>
+                        <li>
+                            Postman
+                        </li>
+                    </ul>
+                    <br>
+                    <br>
+                    <a href="https://movie-myflix.netlify.app/" class="goToAppWebsite-link" target="_blank">Go to the App website</a>
+                    <br>
+                    <a href="https://github.com/nastja4/myFlix-client" class="seeProject-link" target="_blank">See the project on GitHub</a>
                 </div>
                 <div class="grid__item">
                     <p style="font-size: 20px;">Project #4</p>
@@ -96,18 +178,67 @@
                     <p>
                         Meet App is a serverless, progressive web application (PWA) built with React, following a test-driven development (TDD) approach. The app utilizes the Google Calendar API to fetch upcoming events and offers various features for users to explore and manage events.
                     </p>
+                    <p>
+                        Technologies and techniques used:
+                    </p>
+                    <ul class="projectTechnologies-list">
+                        <li>
+                            React
+                        </li>
+                        <li>
+                            AWS Lambda (serverless computing service)
+                        </li>
+                        <li>
+                            Google Calendar API, OAuth2
+                        </li>
+                        <li>
+                            Create-React-App (or “CRA”)
+                        </li>                
+                        <li>
+                            Test-Driven Development (TDD), Behavior-Driven Development (BDD) (Gherkin syntax, Cucumber's Jest-integrated version "jest-cucumber")
+                        </li>                        
+                        <li>
+                            Unit Testing, Integration Testing, End-to-End Testing (using Puppeteer)
+                        </li>                        
+                    </ul>
+                    <br>
+                    <br>
+                    <a href="https://nastja4.github.io/meet/" class="goToAppWebsite-link" target="_blank">Go to the App website</a>
+                    <br>
                     <a href="https://github.com/nastja4/meet" class="seeProject-link" target="_blank">See the project on GitHub</a>
                 </div>
                 <div class="grid__item">
                     <p style="font-size: 20px;">Project #5</p>
-                    <h2> The "Bona Chat" App</h2>
+                    <h2> The "Bona Chat" Mobile App</h2>
                     <div style="text-align: center;">
                         <img src="img/chat_screenshot.jpeg" class="work__screenshot chat__screenshot" alt="A screenshot of the Chat App project"/>
                         <img src="img/chat_screenshot2.jpg" class="work__screenshot chat__screenshot" alt="A screenshot of the Chat App project"/>
                     </div>
                     <p>
                         A mobile chat application built with React Native and Expo, offering real-time chat, image sharing, and location sharing features. This app provides an accessible chat interface for users to communicate with friends and family. 
-                    </p>                    
+                    </p>
+                    <p>
+                        Technologies and techniques used:
+                    </p>
+                    <ul class="projectTechnologies-list">
+                        <li>
+                            React Native
+                        </li>
+                        <li>
+                            Expo
+                        </li>
+                        <li>
+                            Google Firebase, Cloud Firestore
+                        </li>
+                        <li>
+                            React Native's AsyncStorage
+                        </li>
+                        <li>
+                            Gifted Chat Library
+                        </li>                                            
+                    </ul>
+                    <br>
+                    <br>         
                     <a href="https://github.com/nastja4/chat_app" class="seeProject-link" target="_blank">See the project on GitHub</a>
                 </div>
                 <div class="grid__item">
@@ -119,6 +250,27 @@
                     <p>
                         The myFlix Angular App is a single-page, responsive movie application built using Angular. It serves as the client-side interface for the myFlix movie app, interacting with the existing server-side code and database through REST API endpoints.
                     </p>
+                    <p>
+                        Technologies and techniques used:
+                    </p>
+                    <ul class="projectTechnologies-list">
+                        <li>
+                            Angular
+                        </li>
+                        <li>
+                            TypeScript
+                        </li>
+                        <li>
+                            Angular Material
+                        </li>
+                        <li>
+                            REST API Integration (using Angular HttpClient)
+                        </li>                                                                   
+                    </ul>
+                    <br>
+                    <br> 
+                    <a href="https://nastja4.github.io/myFlix_Angular-client/welcome" class="goToAppWebsite-link" target="_blank">Go to the App website</a>
+                    <br>
                     <a href="https://github.com/nastja4/myFlix_Angular-client" class="seeProject-link" target="_blank">See the project on GitHub</a>
                 </div>
                 
@@ -130,10 +282,9 @@
                 Find me on
             </p>
             <div class="social-media">
-                <!-- Fix for relevant links -->
                 <a href="https://github.com/nastja4" target="_blank"><img src="img/github_icon.svg" alt="A link in the form of Github icon"></a>
-                <img src="img/twitter_icon.svg" alt="Twitter icon">
-                <img src="img/linkedin_icon.svg" alt="LinkedIn icon">
+                <a href="https://twitter.com/AnastasiaF18378" target="_blank"><img src="img/x_twitter_icon.svg" alt="Twitter icon"></a>
+                <a href="https://www.linkedin.com/in/anastasia-fazius-613a25278/" target="_blank"><img src="img/linkedin_icon.svg" alt="LinkedIn icon"></a>                
             </div>
         </footer>        
         <script src="js/main.js"></script>

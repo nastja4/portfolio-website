@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Contact Anastasia Fazius</title>
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="shortcut icon" href="img/my-favicon.ico">
         <link rel="stylesheet" type="text/css" href="css/necolas.github.io_normalize.css_latest_normalize.css">
@@ -23,10 +22,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="page-header">
-            <!-- Add your logo here -->
-            <p class="page-header__item" id="logo-name">Anastasia Fazius</p>
-            <!-- <img src="http://via.placeholder.com/200x70" class="page-header__item" alt="Personal logo of Lisa Gringl, a text logo in uppercase letters that consists of my name"> -->
+        <header class="page-header">            
+            <p class="page-header__item" id="logo-name">Anastasia Fazius</p>            
             <nav class="main-navigation page-header__item">
                 <ul role="menubar" class="navigation-list">
                     <li role="presentation" onclick="redirectTo('index.html');" style="cursor: pointer;">
@@ -45,36 +42,57 @@
             </nav>        
         </header>
         
-        <main style="padding: 20px; padding-top: 0; height: 100%;">
-            <h1>Contact</h1>
-            <div>                
-                20097 Hamburg,<br>
-                Germany<br>
+        <main style="padding: 0 20px; height: 100%;">
+            <div class="contact_page-section">
+                <h1>Contact</h1>
+                <div>                
+                    20097 Hamburg,<br>
+                    Germany<br>
+                    <br>
+                    Tel <a href="tel:+49(0)178-1472123">+49 (0) 178-1472123</a><br>
+                    Email <a href="mailto:AnastasiaFazius@gmx.de">AnastasiaFazius [@] gmx [dot] de</a><br>
+                    Skype <a href="skype:live:chetaa.de?call">Anastasia Fazius</a>
+                </div>
                 <br>
-                Tel <a href="tel:+49(0)178-1472123">+49 (0) 178-1472123</a><br>
-                <a href="mailto:AnastasiaFazius@gmx.de">AnastasiaFazius [@] gmx [dot] de</a><br>
-                Skype <a href="skype:live:chetaa.de?call">Anastasia Fazius</a>
+                <br>
+
+                <div class="welcome-message" style="text-align: center;">
+                    <h3>Welcome! I'd love to hear from you. Feel free to leave a message:</h3>
+                </div>
+                
+                <form action="https://formspree.io/f/xvojyjgq" method="post" id="contact-form">
+                    <label class="standard-label" for="contact-email">
+                        Email: 
+                    </label>
+                    <input type="email" name="email" id="contact-email" required>
+        
+                    <br>
+                    <br>
+                    <label class="standard-label" for="contact-phone">
+                        Phone number: 
+                    </label>
+                    <!-- <input type="tel" id="contact-phone" placeholder="XXX-XXX-XXXX" pattern="\d{3}[\-]\d{3}[\-]\d{4}"> -->
+                    <input type="tel" name="phone" id="contact-phone" placeholder="XXX-XXX-XXXX">
+
+                    <br>
+                    <br>
+                    <label class="standard-label" for="contact-telephone">
+                        Company name: 
+                    </label>
+                    <input type="text" name="company_name" id="company-name">
+
+                    <br>
+                    <br>
+                    <label class="standard-label" for="contact-message">
+                        Message: 
+                        <textarea name="message" maxlength="240" id="contact-message" required></textarea>
+                    </label>
+
+                    <br>
+                    <br>                    
+                    <button type="submit" class="button" style="background-color:#005c99">Send message</button>
+                </form>
             </div>
-            <br>
-            <!-- Complete action attribute -->
-            <form action="#" method="post" id="contact-form">
-                <label class="standard-label" for="contact-email">E-mail: </label>
-                <input type="email" id="contact-email" required>
-    
-                <br>
-                <br>
-                <label class="standard-label" for="contact-telephone">Phone number: </label>
-                <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-
-                <br>
-                <br>
-                <label class="standard-label" for="contact-message">Message: </label>
-                <textarea maxlength="240" id="contact-message" required></textarea>
-
-                <br>
-                <br>
-                <input type="submit" class="button" value="Send message">
-            </form>
         </main>
 
         <footer class="page-footer">
@@ -82,10 +100,9 @@
                 Find me on
             </p>
             <div class="social-media">
-                <!-- Fix for relevant links -->
                 <a href="https://github.com/nastja4" target="_blank"><img src="img/github_icon.svg" alt="A link in the form of Github icon"></a>
-                <img src="img/twitter_icon.svg" alt="Twitter icon">
-                <img src="img/linkedin_icon.svg" alt="LinkedIn icon">
+                <a href="https://twitter.com/AnastasiaF18378" target="_blank"><img src="img/x_twitter_icon.svg" alt="Twitter icon"></a>
+                <a href="https://www.linkedin.com/in/anastasia-fazius-613a25278/" target="_blank"><img src="img/linkedin_icon.svg" alt="LinkedIn icon"></a>                
             </div>
         </footer>        
         <script src="js/main.js"></script> 
