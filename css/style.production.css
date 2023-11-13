@@ -319,7 +319,7 @@ button:focus {
 .main-text {
     position: absolute;
     color: #931B3D;
-    text-align: center;
+    text-align: center;    
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -436,22 +436,42 @@ button:focus {
 
 @media all and (max-width: 479px) {
     main {
-        margin-top: 220px;
+        margin-top: 180px;
+    }
+    .page-header {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .page-footer {
+        padding-top: 0;
     }
 }
 
 @media all and (min-width: 480px) and (max-width: 679px) {
     main {
-        margin-top: 150px;
+        margin-top: 110px;
+    }
+    .page-header {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .page-footer {
+        padding-top: 0;
     }
 }
 
 @media all and (max-width: 1400px) {
     .main-text {
         background-color: #eaeae8;
-        padding: 15px;
+        padding: 2%;
         border-radius: 5px;
         border: 1px solid #931B3D;
+    }
+    .welcome_line {
+        margin-top: 0;
+    }
+    .check-my-code_line {
+        margin-bottom: 0;
     }
 }
 
@@ -536,6 +556,8 @@ button:focus {
 
 .introduction-text {
     list-style-type: none;
+    padding: 0; 
+    text-align: center;
 }
 
 table {
