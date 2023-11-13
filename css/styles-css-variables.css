@@ -134,7 +134,7 @@ button:hover, .button:hover, button:focus, .button:focus {
 
 /* flex-grow: 0, flex-shrink: 1, flex-basis: 200px */
 .page-header__item {
-    flex: 0 1 200px;
+    /* flex: 0 1 200px; */
     display: flex;
     align-items: center;   
 } 
@@ -317,10 +317,7 @@ button:hover, .button:hover, button:focus, .button:focus {
     }
 }
 
-@media all and (max-width: 479px) {
-    main {
-        margin-top: 180px;
-    }
+@media all and (max-width: 662px) {
     .page-header {
         padding-top: 0;
         padding-bottom: 0;
@@ -330,16 +327,9 @@ button:hover, .button:hover, button:focus, .button:focus {
     }
 }
 
-@media all and (min-width: 480px) and (max-width: 679px) {
+@media all and (max-width: 389px) {
     main {
-        margin-top: 110px;
-    }
-    .page-header {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    .page-footer {
-        padding-top: 0;
+        margin-top: 180px;
     }
 }
 
