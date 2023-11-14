@@ -44,7 +44,7 @@ body {
 }
 
 main {
-    margin-top: 110px;
+    margin-top: 101px;
 }
 
 input, 
@@ -118,6 +118,8 @@ button:hover, .button:hover, button:focus, .button:focus {
 .page-header {
     display: flex;
     width: 100%;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
     border-bottom: 1px solid var(--headerBorderlineColor);
     box-shadow: 0 0 10px var(--shadowColorPageHeader);
@@ -134,9 +136,8 @@ button:hover, .button:hover, button:focus, .button:focus {
 
 /* flex-grow: 0, flex-shrink: 1, flex-basis: 200px */
 .page-header__item {
-    /* flex: 0 1 200px; */
-    display: flex;
-    align-items: center;   
+    flex: 0 1 200px;
+    margin: auto 0; 
 } 
 
 #logo-name {
@@ -144,22 +145,13 @@ button:hover, .button:hover, button:focus, .button:focus {
     color: var(--fontColor);
 }
 
-.page-header__item:last-child {
-    flex-grow: 1;
-    text-align: right;
-}
-
-.main-navigation {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
 /* erase the dots */
 .navigation-list {
     display: flex;
     list-style-type: none;
+    padding: 0;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .navigation-list li {
@@ -317,7 +309,7 @@ button:hover, .button:hover, button:focus, .button:focus {
     }
 }
 
-@media all and (max-width: 662px) {
+@media all and (max-width: 768px) {
     .page-header {
         padding-top: 0;
         padding-bottom: 0;
@@ -325,11 +317,14 @@ button:hover, .button:hover, button:focus, .button:focus {
     .page-footer {
         padding-top: 0;
     }
+    main {
+        margin-top: 107px;
+    }
 }
 
-@media all and (max-width: 389px) {
+@media all and (max-width: 439px) {
     main {
-        margin-top: 180px;
+        margin-top: 179px;
     }
 }
 
