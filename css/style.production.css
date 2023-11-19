@@ -290,11 +290,11 @@ button:focus {
     -webkit-box-pack: end;    
         -ms-flex-pack: end;    
             justify-content: flex-end;
-    height: 90%;  
+    height: 80%;  
     background-color: #eaeae8;  
     margin-right: 7%;    
-    border-top: 3px double #aa1f46;
-    border-right: 3px double #aa1f46;    
+    border-top: 3px double #931B3D;
+    border-right: 3px double #931B3D;    
 }
 
 .profile__portrait {

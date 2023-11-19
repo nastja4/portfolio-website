@@ -19,7 +19,7 @@ Accent Color ():
     --shadowColorGridItem: rgba(0, 0, 0, 0.4);
     --gridBgColor: #005c99;
     --headerBorderlineColor: #e4829e;
-    --homePortraitBorder: 3px double #aa1f46;
+    --homePortraitBorder: 3px double #931B3D;
     --portraitContainerBgrColor: #eaeae8;
     --fontFamilyNormal: "Poppins", sans-serif;
     --fontFamilyHeader: "Sintony", sans-serif;
@@ -206,7 +206,7 @@ button:hover, .button:hover, button:focus, .button:focus {
     display: flex;
     width: 100%;    
     justify-content: flex-end;
-    height: 90%;  
+    height: 80%;  
     background-color: var(--portraitContainerBgrColor);  
     margin-right: 7%;    
     border-top: var(--homePortraitBorder);
