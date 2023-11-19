@@ -194,11 +194,11 @@ button:focus,
     display: flex;
     width: 100%;    
     justify-content: flex-end;
-    height: 90%;    
+    height: 80%;    
     background-color: #eaeae8;  
     margin-right: 8%;    
-    border-top: 3px double #aa1f46; 
-    border-right: 3px double #aa1f46; 
+    border-top: 3px double #931B3D; 
+    border-right: 3px double #931B3D; 
     
 }
 
