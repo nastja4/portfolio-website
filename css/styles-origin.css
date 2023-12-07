@@ -286,7 +286,8 @@ padding: 0 20px;
     }
 
     .grid__item:hover {
-        transform: scale(1.01);
+        /* transform: scale(1.01); */
+        transform: translate(0, -3px);
         box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4); 
         cursor: pointer;
     }

@@ -296,7 +296,8 @@ button:hover, .button:hover, button:focus, .button:focus {
     }
 
     .grid__item:hover {
-        transform: scale(1.01);
+        /* transform: scale(1.01); */
+        transform: translate(0, -3px);
         box-shadow: 6px 6px 10px var(--shadowColorGridItem); 
         cursor: pointer;
     }

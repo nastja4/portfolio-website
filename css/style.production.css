@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 2 version
+* Browsers: last 4 version
 */
 
 /*
@@ -92,6 +92,7 @@ button {
     border-radius: 3px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
     transition: opacity 0.2s;
 }
 
@@ -107,6 +108,7 @@ button {
     border-radius: 3px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
     transition: opacity 0.2s;
 }
 
@@ -309,6 +311,7 @@ button:focus {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
 }
 
@@ -400,13 +403,16 @@ button:focus {
                 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); 
         -webkit-transition: -webkit-transform 0.2s ease; 
         transition: -webkit-transform 0.2s ease; 
+        -o-transition: transform 0.2s ease; 
         transition: transform 0.2s ease; 
         transition: transform 0.2s ease, -webkit-transform 0.2s ease;
     }
 
     .grid__item:hover {
-        -webkit-transform: scale(1.01);
-                transform: scale(1.01);
+        /* transform: scale(1.01); */
+        -webkit-transform: translate(0, -3px);
+            -ms-transform: translate(0, -3px);
+                transform: translate(0, -3px);
         -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4);
                 box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4); 
         cursor: pointer;
