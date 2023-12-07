@@ -354,14 +354,17 @@ padding: 0 20px;
 }
 
 .seeProject-link:visited,
-.goToAppWebsite-link:visited {
+.goToAppWebsite-link:visited,
+.toDownloadCaseStudy:visited {
     color: white;
 }
 
 .seeProject-link:active,
 .seeProject-link:hover,
 .goToAppWebsite-link:active,
-.goToAppWebsite-link:hover {
+.goToAppWebsite-link:hover,
+.toDownloadCaseStudy:active,
+.toDownloadCaseStudy:hover {
     font-weight: bold;
     /* letter-spacing: 1px; */
 }

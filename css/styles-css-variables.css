@@ -364,14 +364,17 @@ button:hover, .button:hover, button:focus, .button:focus {
 }
 
 .seeProject-link:visited,
-.goToAppWebsite-link:visited {
+.goToAppWebsite-link:visited,
+.toDownloadCaseStudy:visited {
     color: var(--fontColor);
 }
 
 .seeProject-link:active,
 .seeProject-link:hover,
 .goToAppWebsite-link:active,
-.goToAppWebsite-link:hover {
+.goToAppWebsite-link:hover,
+.toDownloadCaseStudy:active,
+.toDownloadCaseStudy:hover {
     font-weight: bold;
     /* letter-spacing: 1px; */
 }
