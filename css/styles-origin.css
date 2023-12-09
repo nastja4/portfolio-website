@@ -353,18 +353,12 @@ padding: 0 20px;
     }
 }
 
-.seeProject-link:visited,
-.goToAppWebsite-link:visited,
-.toDownloadCaseStudy:visited {
+.linksInProjectsStyle:visited {
     color: white;
 }
 
-.seeProject-link:active,
-.seeProject-link:hover,
-.goToAppWebsite-link:active,
-.goToAppWebsite-link:hover,
-.toDownloadCaseStudy:active,
-.toDownloadCaseStudy:hover {
+.linksInProjectsStyle:active,
+.linksInProjectsStyle:hover {
     font-weight: bold;
     /* letter-spacing: 1px; */
 }
@@ -404,9 +398,11 @@ padding: 0 20px;
 }
 
 .introduction-text {
-    list-style-type: none;
-    padding: 0; 
-    text-align: center;
+    /* list-style-type: none; */
+    /* padding: 0;  */
+    /* text-align: center; */
+    text-align: left;
+    padding: 0 25%;
 }
 
 table {
@@ -470,3 +466,7 @@ svg {
 
                 /* ----------------------- CONTACT PAGE ------------------- */
 
+.contactForm {
+    display: flex; 
+    justify-content: center;
+}

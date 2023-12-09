@@ -363,18 +363,12 @@ button:hover, .button:hover, button:focus, .button:focus {
     }
 }
 
-.seeProject-link:visited,
-.goToAppWebsite-link:visited,
-.toDownloadCaseStudy:visited {
+.linksInProjectsStyle:visited {
     color: var(--fontColor);
 }
 
-.seeProject-link:active,
-.seeProject-link:hover,
-.goToAppWebsite-link:active,
-.goToAppWebsite-link:hover,
-.toDownloadCaseStudy:active,
-.toDownloadCaseStudy:hover {
+.linksInProjectsStyle:active,
+.linksInProjectsStyle:hover {
     font-weight: bold;
     /* letter-spacing: 1px; */
 }
@@ -413,9 +407,11 @@ button:hover, .button:hover, button:focus, .button:focus {
 }
 
 .introduction-text {
-    list-style-type: none;
-    padding: 0; 
-    text-align: center;
+    /* list-style-type: none; */
+    /* padding: 0;  */
+    /* text-align: center; */
+    text-align: left;
+    padding: 0 25%;
 }
 
 table {
@@ -475,4 +471,11 @@ svg {
 }
 #path51 {
     animation-delay: 3s;
+}
+
+/* ----------------------- CONTACT PAGE ------------------- */
+
+.contactForm {
+    display: flex; 
+    justify-content: center;
 }
