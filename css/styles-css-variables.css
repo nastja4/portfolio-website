@@ -391,7 +391,8 @@ button:hover, .button:hover, button:focus, .button:focus {
 
           /* ----------------------- ABOUT PAGE ----------------------- */
 
-.main_about {
+.main_about,
+.main_casestudy {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -401,7 +402,8 @@ button:hover, .button:hover, button:focus, .button:focus {
 }
 
 @media all and (min-width: 1470px) {
-    .main_about {
+    .main_about,
+    .main_casestudy {
         padding: 0 15%;
     }
 }
