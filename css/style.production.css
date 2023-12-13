@@ -543,6 +543,18 @@ button:focus {
     padding: 0 25%;
 }
 
+@media all and (max-width: 564px) {
+    .introduction-text {
+        padding: 0 8%;
+    }
+}
+
+@media all and (min-width: 565px) and (max-width: 886px) {
+    .introduction-text {
+        padding: 0 15%;
+    }
+}
+
 table {
     border-spacing: 15px 5px;
     margin: 0 auto;
