@@ -1,7 +1,7 @@
 # Responsive Portfolio Website
 
 ## Project Overview
-This project aims to create a responsive portfolio website using HTML and CSS to showcase your work as a web developer. The website will serve as a platform for potential employers, clients, and collaborators to learn more about your professional experience and relevant skills.
+This project aims to create a responsive portfolio website using HTML and CSS to showcase my work as a web developer. 
 
 ## Table of Contents
 - [Project Objective](#project-objective)
