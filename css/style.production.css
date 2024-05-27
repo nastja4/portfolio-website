@@ -175,13 +175,13 @@ button:focus {
 /* flex-grow: 0, flex-shrink: 1, flex-basis: 200px */
 .page-header__item {
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
+  -ms-flex: 0 1 300px;
+  flex: 0 1 300px;
   margin: auto 0;
 }
 
 #logo-name {
-  font-size: 22px;
+  font-size: 24px;
   color: #ffff;
 }
 
@@ -351,7 +351,7 @@ button:focus {
 }
 
 .social-media a img {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 /* Remove the right margin from the last icon */
@@ -775,4 +775,8 @@ button[type="submit"]:hover {
   button[type="submit"] {
     font-size: 1em;
   }
+}
+
+.welcome-message {
+  font-size: 22px;
 }
